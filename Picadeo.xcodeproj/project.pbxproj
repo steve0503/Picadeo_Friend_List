@@ -21,6 +21,8 @@
 		00B852AF188E42A70066E5B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B85291188E42A70066E5B8 /* UIKit.framework */; };
 		00B852B7188E42A70066E5B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00B852B5188E42A70066E5B8 /* InfoPlist.strings */; };
 		00B852B9188E42A70066E5B8 /* PicadeoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B852B8188E42A70066E5B8 /* PicadeoTests.m */; };
+		00B852C3188E42CA0066E5B8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B852C2188E42CA0066E5B8 /* Social.framework */; };
+		00B852C5188E42E00066E5B8 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B852C4188E42E00066E5B8 /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		00B852B4188E42A70066E5B8 /* PicadeoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PicadeoTests-Info.plist"; sourceTree = "<group>"; };
 		00B852B6188E42A70066E5B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		00B852B8188E42A70066E5B8 /* PicadeoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PicadeoTests.m; sourceTree = "<group>"; };
+		00B852C2188E42CA0066E5B8 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		00B852C4188E42E00066E5B8 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B852C5188E42E00066E5B8 /* Accounts.framework in Frameworks */,
+				00B852C3188E42CA0066E5B8 /* Social.framework in Frameworks */,
 				00B85290188E42A70066E5B8 /* CoreGraphics.framework in Frameworks */,
 				00B85292188E42A70066E5B8 /* UIKit.framework in Frameworks */,
 				00B8528E188E42A70066E5B8 /* Foundation.framework in Frameworks */,
@@ -101,6 +107,8 @@
 		00B8528C188E42A70066E5B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00B852C4188E42E00066E5B8 /* Accounts.framework */,
+				00B852C2188E42CA0066E5B8 /* Social.framework */,
 				00B8528D188E42A70066E5B8 /* Foundation.framework */,
 				00B8528F188E42A70066E5B8 /* CoreGraphics.framework */,
 				00B85291188E42A70066E5B8 /* UIKit.framework */,
