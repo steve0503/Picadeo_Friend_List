@@ -127,36 +127,6 @@
     
     NSDictionary *one = self.data[indexPath.row];
     
-    
-    NSString *contents;
-    
-#if 0
-    if (one[@"message"]) {
-        
-        
-        NSDictionary *likes = one[@"likes"];
-        
-        NSArray *data = likes[@"data"];
-        
-        contents = [NSString stringWithFormat:@"%@ ....(%d)",one[@"message"],[data count]];
-    }
-    else{
-        
-        
-        contents = one[@"story"];
-        
-        cell.indentationLevel = 2;
-        
-        
-    
-    }
-    
-#endif
-
-    
-    
-    
-    
     cell.textLabel.text = [one objectForKey:@"name"];
     
     return cell;
@@ -164,41 +134,6 @@
     
 }
 
-#if 0
-FBRequest* friendsRequest = [FBRequest requestWithGraphPath:@"me/friends?fields=installed" parameters:nil HTTPMethod:@"GET"];
-[friendsRequest startWithCompletionHandler: ^(FBRequestConnection *connection,
-                                              NSDictionary* result,
-                                              NSError *error) {
-    NSArray* friends = [result objectForKey:@"data"];
-    NSLog(@"Found: %i friends", friends.count);
-    for (NSDictionary<FBGraphUser>* friend in friends) {
-        NSLog(@"I have a friend named %@ with id %@", friend.name, friend.id);
-        
-    }
-    NSArray *friendIDs = [friends collect:^id(NSDictionary<FBGraphUser>* friend) {
-        return friend.id;
-    }];
-    
-}];
-
-
-#endif
-
-
-#if 0
-
-- (void)request:(FBRequest *)request didLoad:(id)result {
-    //ok so it's a dictionary with one element (key="data"), which is an array of dictionaries, each with "name" and "id" keys
-    items = [[(NSDictionary *)result objectForKey:@"data"]retain];
-    for (int i=0; i<[items count]; i++) {
-        NSDictionary *friend = [items objectAtIndex:i];
-        long long fbid = [[friend objectForKey:@"id"]longLongValue];
-        NSString *name = [friend objectForKey:@"name"];
-        NSLog(@"id: %lld - Name: %@", fbid, name);
-    }
-}
-
-#endif
 
 
 -(void)viewWillAppear:(BOOL)animated{
